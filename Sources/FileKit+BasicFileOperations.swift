@@ -1,5 +1,6 @@
 
-extension FileKit: BasicFileCommands {
+extension FileKit {
+
     public func cd(_ path: String) throws {
         if !FileKit.fm.changeCurrentDirectoryPath(path) {
             if !FileKit.fm.fileExists(atPath: path) {

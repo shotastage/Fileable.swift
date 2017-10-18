@@ -1,6 +1,6 @@
 import Foundation
 
-public class FileKit {
+open class FileKit {
 
     // Define typealias
     public typealias Path = String

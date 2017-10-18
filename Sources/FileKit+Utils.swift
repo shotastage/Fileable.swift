@@ -2,6 +2,7 @@ import Foundation
 
 // Utils
 extension FileKit {
+
     public func touch(_ path: String) throws {
         let empty = ""
         do {
