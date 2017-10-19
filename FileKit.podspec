@@ -24,9 +24,9 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://git.happinesslab.xyz/PINNA/FileKit'
   s.license          = { :type => 'ISC', :file => 'LICENSE' }
   s.author           = { 'shotastage' => 'hornet.live.mf@gmail.com' }
-  s.source           = { :git => 'https://git.happinesslab.xyz/PINNA/FileKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Labbiness/FileKit.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'Sources/**/*'
 end

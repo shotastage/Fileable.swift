@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FileKit::FileKit"
-               BuildableName = "FileKit.framework"
-               BlueprintName = "FileKit"
+               BlueprintIdentifier = "2570B5DC1F983A6200E253A0"
+               BuildableName = "iOSFileKit.framework"
+               BlueprintName = "iOSFileKit"
                ReferencedContainer = "container:FileKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2570B5E41F983A6200E253A0"
+               BuildableName = "iOSFileKitTests.xctest"
+               BlueprintName = "iOSFileKitTests"
+               ReferencedContainer = "container:FileKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2570B5DC1F983A6200E253A0"
+            BuildableName = "iOSFileKit.framework"
+            BlueprintName = "iOSFileKit"
+            ReferencedContainer = "container:FileKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -47,9 +66,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FileKit::FileKit"
-            BuildableName = "FileKit.framework"
-            BlueprintName = "FileKit"
+            BlueprintIdentifier = "2570B5DC1F983A6200E253A0"
+            BuildableName = "iOSFileKit.framework"
+            BlueprintName = "iOSFileKit"
             ReferencedContainer = "container:FileKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +84,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FileKit::FileKit"
-            BuildableName = "FileKit.framework"
-            BlueprintName = "FileKit"
+            BlueprintIdentifier = "2570B5DC1F983A6200E253A0"
+            BuildableName = "iOSFileKit.framework"
+            BlueprintName = "iOSFileKit"
             ReferencedContainer = "container:FileKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
