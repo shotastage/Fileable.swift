@@ -24,6 +24,13 @@
 		2570B5E61F983A6200E253A0 /* iOSFileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2570B5DD1F983A6200E253A0 /* iOSFileKit.framework */; };
 		2570B5EB1F983A6200E253A0 /* iOSFileKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570B5EA1F983A6200E253A0 /* iOSFileKitTests.swift */; };
 		2570B5ED1F983A6200E253A0 /* iOSFileKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2570B5DF1F983A6200E253A0 /* iOSFileKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F28AB41F9842590065ACBB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Errors.swift */; };
+		25F28AB51F9842590065ACBB /* FileKit+BasicFileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* FileKit+BasicFileOperations.swift */; };
+		25F28AB61F9842590065ACBB /* FileKit+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* FileKit+Info.swift */; };
+		25F28AB71F9842590065ACBB /* FileKit+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* FileKit+Utils.swift */; };
+		25F28AB81F9842590065ACBB /* FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* FileKit.swift */; };
+		25F28AB91F9842590065ACBB /* Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Linux.swift */; };
+		25F28ABA1F9842590065ACBB /* iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* iOS.swift */; };
 		OBJ_28 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_34 /* FileKitTestMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* FileKitTestMain.swift */; };
 		OBJ_35 /* XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* XCTest.swift */; };
@@ -359,6 +366,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F28AB41F9842590065ACBB /* Errors.swift in Sources */,
+				25F28AB51F9842590065ACBB /* FileKit+BasicFileOperations.swift in Sources */,
+				25F28AB61F9842590065ACBB /* FileKit+Info.swift in Sources */,
+				25F28AB71F9842590065ACBB /* FileKit+Utils.swift in Sources */,
+				25F28AB81F9842590065ACBB /* FileKit.swift in Sources */,
+				25F28AB91F9842590065ACBB /* Linux.swift in Sources */,
+				25F28ABA1F9842590065ACBB /* iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +571,7 @@
 		2570B5F21F983A6200E253A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -616,6 +631,7 @@
 		2570B5F31F983A6200E253A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
