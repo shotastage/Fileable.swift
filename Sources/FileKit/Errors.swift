@@ -1,5 +1,6 @@
 import Foundation
 
+
 enum FileError: Error {
     case NotExists
     case AleardyExists
