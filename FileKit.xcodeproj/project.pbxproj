@@ -23,7 +23,6 @@
 /* Begin PBXBuildFile section */
 		2570B5E61F983A6200E253A0 /* iOSFileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2570B5DD1F983A6200E253A0 /* iOSFileKit.framework */; };
 		2570B5EB1F983A6200E253A0 /* iOSFileKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570B5EA1F983A6200E253A0 /* iOSFileKitTests.swift */; };
-		2570B5ED1F983A6200E253A0 /* iOSFileKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2570B5DF1F983A6200E253A0 /* iOSFileKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F28AB41F9842590065ACBB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Errors.swift */; };
 		25F28AB51F9842590065ACBB /* FileKit+BasicFileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* FileKit+BasicFileOperations.swift */; };
 		25F28AB61F9842590065ACBB /* FileKit+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* FileKit+Info.swift */; };
@@ -75,7 +74,7 @@
 		2570B5E51F983A6200E253A0 /* iOSFileKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFileKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2570B5EA1F983A6200E253A0 /* iOSFileKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFileKitTests.swift; sourceTree = "<group>"; };
 		2570B5EC1F983A6200E253A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"FileKit::FileKitTests::Product" /* FileKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = FileKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* FileKit+BasicFileOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileKit+BasicFileOperations.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* FileKit+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileKit+Info.swift"; sourceTree = "<group>"; };
@@ -207,17 +206,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		2570B5DA1F983A6200E253A0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2570B5ED1F983A6200E253A0 /* iOSFileKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		2570B5DC1F983A6200E253A0 /* iOSFileKit */ = {
 			isa = PBXNativeTarget;
@@ -225,7 +213,6 @@
 			buildPhases = (
 				2570B5D81F983A6200E253A0 /* Sources */,
 				2570B5D91F983A6200E253A0 /* Frameworks */,
-				2570B5DA1F983A6200E253A0 /* Headers */,
 				2570B5DB1F983A6200E253A0 /* Resources */,
 			);
 			buildRules = (
