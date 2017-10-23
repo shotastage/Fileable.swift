@@ -23,12 +23,13 @@
 /* Begin PBXBuildFile section */
 		2570B5E61F983A6200E253A0 /* iOSFileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2570B5DD1F983A6200E253A0 /* iOSFileKit.framework */; };
 		2570B5EB1F983A6200E253A0 /* iOSFileKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570B5EA1F983A6200E253A0 /* iOSFileKitTests.swift */; };
+		25C785621F9DB35D00D27F29 /* Writable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C785611F9DB35D00D27F29 /* Writable.swift */; };
+		25C785641F9DB37100D27F29 /* Readable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C785631F9DB37000D27F29 /* Readable.swift */; };
 		25F28AB41F9842590065ACBB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Errors.swift */; };
 		25F28AB51F9842590065ACBB /* FileKit+BasicFileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* FileKit+BasicFileOperations.swift */; };
 		25F28AB61F9842590065ACBB /* FileKit+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* FileKit+Info.swift */; };
 		25F28AB71F9842590065ACBB /* FileKit+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* FileKit+Utils.swift */; };
 		25F28AB81F9842590065ACBB /* FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* FileKit.swift */; };
-		25F28AB91F9842590065ACBB /* Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Linux.swift */; };
 		25F28ABA1F9842590065ACBB /* iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* iOS.swift */; };
 		OBJ_28 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_34 /* FileKitTestMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* FileKitTestMain.swift */; };
@@ -74,6 +75,8 @@
 		2570B5E51F983A6200E253A0 /* iOSFileKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFileKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2570B5EA1F983A6200E253A0 /* iOSFileKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFileKitTests.swift; sourceTree = "<group>"; };
 		2570B5EC1F983A6200E253A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C785611F9DB35D00D27F29 /* Writable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writable.swift; sourceTree = "<group>"; };
+		25C785631F9DB37000D27F29 /* Readable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readable.swift; sourceTree = "<group>"; };
 		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"FileKit::FileKitTests::Product" /* FileKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = FileKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* FileKit+BasicFileOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileKit+BasicFileOperations.swift"; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				OBJ_13 /* FileKit.swift */,
 				OBJ_14 /* Linux.swift */,
 				OBJ_15 /* iOS.swift */,
+				25C785611F9DB35D00D27F29 /* Writable.swift */,
+				25C785631F9DB37000D27F29 /* Readable.swift */,
 			);
 			name = FileKit;
 			path = Sources/FileKit;
@@ -358,7 +363,6 @@
 				25F28AB61F9842590065ACBB /* FileKit+Info.swift in Sources */,
 				25F28AB71F9842590065ACBB /* FileKit+Utils.swift in Sources */,
 				25F28AB81F9842590065ACBB /* FileKit.swift in Sources */,
-				25F28AB91F9842590065ACBB /* Linux.swift in Sources */,
 				25F28ABA1F9842590065ACBB /* iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,7 +379,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				25C785641F9DB37100D27F29 /* Readable.swift in Sources */,
 				OBJ_28 /* Package.swift in Sources */,
+				25C785621F9DB35D00D27F29 /* Writable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
