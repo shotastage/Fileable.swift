@@ -1,8 +1,9 @@
 //
-//  iOSSupport.swift
-//  FileKitPackageDescription
+//  iOS+Fileable.swift
+//  Fileable
 //
-//  Created by Shota Shimazu on 2017/10/18.
+//  Created by Shota Shimazu on 2017/10/25.
+//  Copyright © 2017 Labbiness. All rights reserved.
 //
 
 import Foundation
@@ -10,28 +11,28 @@ import Foundation
 
 #if os(iOS) || os(watchOS) || os(tvOS)
     
-    extension FileKit {
+    extension Fileable {
         
         static func appDocument() -> String {
             return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         }
-    
+        
         static func appCache() -> String {
             return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0]
         }
-    
-    
+        
+        
         //
         // URL Converter
         //
         static func toURL(string: String) -> URL {
             return URL(fileURLWithPath: string)
         }
-    
+        
         /*
-        static func toString(fileURL: URL) -> String {
-            return URL(fileURLWithPath: fileURL)
-        }*/
+         static func toString(fileURL: URL) -> String {
+         return URL(fileURLWithPath: fileURL)
+         }*/
     }
-
+    
 #endif
