@@ -6,7 +6,7 @@
 ![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)
 
 
-FileKit is file utilities for Swift.
+Fileable is file utilities for Swift.
 It enables to mange files or directories efficiently and easily.
 
 # Installation
@@ -16,7 +16,7 @@ At now, we aim to register this library to CocoaPods official repository. Howeve
 
 
 ```
-pod 'https://github.com/Labbiness/FileKit.git'
+pod 'https://github.com/Labbiness/Fileable.git'
 ```
 
 ## Carthage
@@ -24,7 +24,7 @@ pod 'https://github.com/Labbiness/FileKit.git'
 You can use this library with Carthage by simply putting this text to `Cartfile`.
 
 ```
-github "Labbiness/FileKit"
+github "Labbiness/Fileable"
 ```
 
 # ⌘ APIs
@@ -44,7 +44,7 @@ github "Labbiness/FileKit"
 
 
 # License
-FileKit is licensed under the `MIT`. 
+Fileable is licensed under the `MIT`. 
 You can use this library free of charge. Please include copyright notie in your program.
 See [LICENSE](./LICENSE) for detail.
 
