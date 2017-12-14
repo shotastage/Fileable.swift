@@ -1,6 +1,6 @@
 ![FileKit](./Documentation/filekit_readme.png)
 
-[![Build Status](https://travis-ci.org/Labbiness/Fileable.svg?branch=master)](https://travis-ci.org/Labbiness/Fileable)
+[![Build Status](https://travis-ci.org/shotastage/Fileable.svg?branch=master)](https://travis-ci.org/Labbiness/Fileable)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Labbiness/FileKit)
 ![iOS 10+](https://img.shields.io/badge/iOS-10%2B-blue.svg?style=flat)
 ![Linux supported](https://img.shields.io/badge/Linux-supported-5D9CEC.svg?style=flat)
@@ -17,7 +17,7 @@ At now, we aim to register this library to CocoaPods official repository. Howeve
 
 
 ```
-pod 'https://github.com/Labbiness/Fileable.git'
+pod 'https://github.com/shotastage/Fileable.git'
 ```
 
 ## Carthage
@@ -25,7 +25,7 @@ pod 'https://github.com/Labbiness/Fileable.git'
 You can use this library with Carthage by simply putting this text to `Cartfile`.
 
 ```
-github "Labbiness/Fileable"
+github "shotastage/Fileable"
 ```
 
 # ⌘ APIs
