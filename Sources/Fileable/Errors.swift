@@ -13,5 +13,6 @@ enum FileableError: Error {
     case NotExists
     case AleardyExists
     case PermissionError
+    case TypeConvertionError
     case Unkown(String)
 }

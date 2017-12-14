@@ -29,10 +29,18 @@ import Foundation
             return URL(fileURLWithPath: string)
         }
         
-        /*
-         static func toString(fileURL: URL) -> String {
-         return URL(fileURLWithPath: fileURL)
-         }*/
+        static func toString(fileURL: URL) throws -> String {
+            
+            let stringURL: String
+            do {
+                try stringURL = String(contentsOf: fileURL)
+            }
+            catch {
+                throw FileableError.TypeConvertionError
+            }
+            
+            return stringURL
+        }
     }
     
 #endif
