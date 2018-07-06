@@ -1,6 +1,6 @@
 ![FileKit](./Documentation/filekit_readme.png)
 
-[![Build Status](https://travis-ci.org/shotastage/Fileable.svg?branch=master)](https://travis-ci.org/Labbiness/Fileable)
+[![Build Status](https://travis-ci.org/shotastage/Fileable.svg?branch=master)](https://travis-ci.org/shotastage/Fileable)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Labbiness/FileKit)
 ![iOS 10+](https://img.shields.io/badge/iOS-10%2B-blue.svg?style=flat)
 ![Linux supported](https://img.shields.io/badge/Linux-supported-5D9CEC.svg?style=flat)
