@@ -3,7 +3,7 @@
 //  Fileable
 //
 //  Created by Shota Shimazu on Oct 25, 2017.
-//  Copyright © 2017 Shota Shimazu. All rights reserved.
+//  Copyright © 2017-2018 Shota Shimazu. All rights reserved.
 //
 
 import Foundation
@@ -27,13 +27,5 @@ open class Fileable {
     
     public init(_ path: String) {
         self.path = path
-    }
-}
-
-
-// Internet file management
-extension Fileable {
-    public func curlO(url: String) {
-        return
     }
 }
