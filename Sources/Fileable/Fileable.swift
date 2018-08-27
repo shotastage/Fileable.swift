@@ -10,9 +10,6 @@ import Foundation
 
 open class Fileable {
     
-    // Define typealias
-    public typealias Path = String
-    
     // Path
     internal var path: String
     
@@ -22,10 +19,11 @@ open class Fileable {
     
     // Initializers
     public init() {
-        self.path = ""
+        self.path = Fileable.pwd
     }
     
     public init(_ path: String) {
         self.path = path
     }
 }
+

@@ -13,10 +13,12 @@ import Foundation
     
     extension Fileable {
         
+        @available(*, unavailable, renamed: "iOSFileSystem.document.path")
         static func appDocument() -> String {
             return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         }
         
+        @available(*, unavailable, renamed: "iOSFileSystem.cache.path")
         static func appCache() -> String {
             return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0]
         }
@@ -25,11 +27,11 @@ import Foundation
         //
         // URL Converter
         //
-        static func toURL(string: String) -> URL {
+        public static func toURL(string: String) -> URL {
             return URL(fileURLWithPath: string)
         }
         
-        static func toString(fileURL: URL) throws -> String {
+        public static func toString(fileURL: URL) throws -> String {
             
             let stringURL: String
             do {
@@ -42,5 +44,25 @@ import Foundation
             return stringURL
         }
     }
+
+
+    public typealias MobileFS = iOSFileSystem
+
+    public enum iOSFileSystem {
+        case document
+        case cache
     
+        var path: String! {
+            switch self {
+            
+            case .document:
+                return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+            case .cache:
+                return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0]
+            }
+        }
+    }
+
+
+
 #endif

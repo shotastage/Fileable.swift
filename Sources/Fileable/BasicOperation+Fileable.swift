@@ -10,7 +10,7 @@ import Foundation
 
 extension Fileable {
     
-    public func cd(_ path: String) throws {
+    public static func cd(_ path: String) throws {
         if !Fileable.fm.changeCurrentDirectoryPath(path) {
             if !Fileable.fm.fileExists(atPath: path) {
                 throw FileableError.NotExists
@@ -20,7 +20,7 @@ extension Fileable {
         }
     }
     
-    public func mkdir(_ path: String) throws {
+    public static func mkdir(_ path: String) throws {
         try Fileable.fm.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
     }
     

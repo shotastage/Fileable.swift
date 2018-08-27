@@ -15,14 +15,14 @@ extension Fileable {
     
     /// Get current working directory.
     /// - returns: Return current directory path as a string.
-    public func pwd() -> String {
+    public static var pwd: String {
         let path = Fileable.fm.currentDirectoryPath
         return path
     }
     
     /// Get home directory.
     /// - returns: Return home directory path as a string.
-    public func home() -> String {
+    public static var home: String {
         let path = NSHomeDirectory()
         return path
     }
