@@ -30,12 +30,12 @@ github "shotastage/Fileable"
 
 # ⌘ APIs
 
-| Function | |
+| Function or Computed property | |
 |:--|:--|
-| `func pwd() -> String` | Get current directory path as a string.|
-| `func home() -> Strings` | Get home directory path.|
-| `func isFile(file: String) -> Bool` | Check the file exists or not. |
-| `func isDir(path: String) -> Bool ` | Check the directory exists or not.|
+| `var pwd: String` | Get current directory path as a string.|
+| `var home: Strings` | Get home directory path.|
+| `var isFile: Bool` | Check the file exists or not. |
+| `var isDir: Bool ` | Check the directory exists or not.|
 | `func ext(path: String) -> Bool ` | Check the directory exists or not.|
 | `func cd(path: String) throws`| Change directory like a `cd` command.|
 | `func mkdir(path: String) throws` | Make directory. |
