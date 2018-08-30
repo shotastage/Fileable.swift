@@ -24,11 +24,24 @@ extension Fileable {
         try Fileable.fm.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
     }
     
-    public func rm(_ target: String) throws {
-        try Fileable.fm.removeItem(atPath: target)
+    public func rm() throws {
+        try Fileable.fm.removeItem(atPath: self.path)
     }
     
-    public func mv(from fromPath: String, to toPath: String) throws {
-        try Fileable.fm.moveItem(atPath: fromPath, toPath: toPath)
+    public func mv(to toPath: String) throws {
+        try Fileable.fm.moveItem(atPath: self.path, toPath: toPath)
+    }
+
+    public func chmod(mode: Int) throws {
+        print("This function is not implemented now.")
+    }
+
+    public static func touch(_ path: String) throws {
+        let empty = ""
+        do {
+            try empty.write(toFile: path, atomically: true, encoding: String.Encoding.utf8)
+        } catch let error as NSError {
+            print("failed to write: \(error)")
+        }
     }
 }
