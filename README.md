@@ -36,7 +36,7 @@ github "shotastage/Fileable"
 | `var home: Strings` | Get home directory path.|
 | `var isFile: Bool` | Check the file exists or not. |
 | `var isDir: Bool ` | Check the directory exists or not.|
-| `func ext(path: String) -> Bool ` | Check the directory exists or not.|
+| `var fileExtension: String` | Get file extension.|
 | `func cd(path: String) throws`| Change directory like a `cd` command.|
 | `func mkdir(path: String) throws` | Make directory. |
 | `func rm(target: String) throws`| Remove directory or file. |

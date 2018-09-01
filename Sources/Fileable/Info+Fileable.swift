@@ -44,4 +44,11 @@ extension Fileable {
     public var isDir: Bool {
         return Fileable.fm.fileExists(atPath: self.path)
     }
+    
+    public var fileExtension: String {
+        
+        let fileName: String = String(self.path.split(separator: "/").last!)
+        
+        return String(fileName.split(separator: ".").last!)
+    }
 }
