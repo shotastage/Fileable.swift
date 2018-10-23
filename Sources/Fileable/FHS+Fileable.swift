@@ -8,23 +8,22 @@
 
 import Foundation
 
-
-public typealias UNIXfs = FHS
-
+#if os(Linux)
 public enum FHS {
     
     case root
-    case settings
+    case setting
     case optional
     
     var path: String! {
         switch self {
         case .root:
             return "/"
-        case .settings:
+        case .setting:
             return "/etc/"
         case .optional:
-            return ""
+            return "/opt/"
         }
     }
 }
+#endif

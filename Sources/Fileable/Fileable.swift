@@ -11,10 +11,10 @@ import Foundation
 open class Fileable {
     
     // Path
-    internal var path: String
+    var path: String
     
     // Foundational File Manager
-    internal static var fm = FileManager.default
+    static var fm = FileManager.default
     
     
     // Initializers

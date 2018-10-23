@@ -13,6 +13,9 @@ import Foundation
     
     extension Fileable {
         
+        ///
+        /// Deprecated methods
+        ///
         @available(*, unavailable, renamed: "iOSFileSystem.document.path")
         static func appDocument() -> String {
             return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
@@ -62,7 +65,5 @@ import Foundation
             }
         }
     }
-
-
 
 #endif
