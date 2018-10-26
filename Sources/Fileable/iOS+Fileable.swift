@@ -18,12 +18,12 @@ import Foundation
         ///
         @available(*, unavailable, renamed: "iOSFileSystem.document.path")
         static func appDocument() -> String {
-            return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+            fatalError("appDocument is deprecated!")
         }
         
         @available(*, unavailable, renamed: "iOSFileSystem.cache.path")
         static func appCache() -> String {
-            return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0]
+            fatalError("appCache is deprecated!")
         }
         
         
@@ -37,6 +37,7 @@ import Foundation
         public static func toString(fileURL: URL) throws -> String {
             
             let stringURL: String
+            
             do {
                 try stringURL = String(contentsOf: fileURL)
             }
