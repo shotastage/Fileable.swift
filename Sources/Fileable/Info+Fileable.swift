@@ -74,7 +74,7 @@ extension Fileable {
         return Fileable.fm.fileExists(atPath: self.path, isDirectory: &isDirectory)
     }
     
-    public var fileExtension: String {
+    public var ext: String {
         
         let fileName: String = String(self.path.split(separator: "/").last!)
         
