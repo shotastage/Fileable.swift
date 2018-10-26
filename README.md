@@ -1,4 +1,4 @@
-![FileKit](./Documentation/filekit_readme.png)
+![Fileable](./Documentation/filekit_readme.png)
 
 [![Build Status](https://travis-ci.org/shotastage/Fileable.swift.svg?branch=master)](https://travis-ci.org/shotastage/Fileable.swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/shotasatge/Fileable)
@@ -13,11 +13,11 @@ It enables to mange files or directories efficiently and easily.
 # Installation
 
 ## CocoaPods
-At now, we aim to register this library to CocoaPods official repository. However, this library is currently under construction process. Thus, you have to configure `Podfile` manually to get this library from this github repository.
 
+You can install this library via Cocoapods just putting text described below to `Podfile`.
 
 ```
-pod 'https://github.com/shotastage/Fileable.git'
+pod 'Fileable'
 ```
 
 ## Carthage
@@ -32,16 +32,17 @@ github "shotastage/Fileable"
 
 | Function or Computed property | |
 |:--|:--|
-| `var pwd: String` | Get current directory path as a string.|
-| `var home: Strings` | Get home directory path.|
+| `static var pwd: String` | Get current directory path.|
+| `static var home: String` | Get home directory path.|
+| `var ls: [String]?` | Get contents of specific directory.|
 | `var isFile: Bool` | Check the file exists or not. |
 | `var isDir: Bool ` | Check the directory exists or not.|
-| `var fileExtension: String` | Get file extension.|
-| `func cd(path: String) throws`| Change directory like a `cd` command.|
-| `func mkdir(path: String) throws` | Make directory. |
+| `var ext: String` | Get file extension.|
+| `static func cd(path: String) throws`| Change directory like a `cd` command.|
+| `static func mkdir(path: String) throws` | Make directory. |
 | `func rm(target: String) throws`| Remove directory or file. |
-| `func mv(from fromPath: String, to toPath: String)`| Move file or directory.|
-| `func touch(_ path: String) throws`| Create empty file. |
+| `func mv(to toPath: String) throws`| Move file or directory.|
+| `func touch(at: String) throws`| Create empty file. |
 
 
 
@@ -49,5 +50,3 @@ github "shotastage/Fileable"
 Fileable is licensed under the `MIT`. 
 You can use this library free of charge. Please include copyright notie in your program.
 See [LICENSE](./LICENSE) for detail.
-
-
