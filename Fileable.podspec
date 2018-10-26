@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'Unix command like file management library for Swift.'
   s.description      = <<-DESC
-  Unix command like file management library for Swift.
+  Unix command like and objective file management library for Swift. 
                        DESC
 
   s.homepage         = 'https://github.com/shotastage/Fileable'
