@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/shotastage/Fileable'
   s.authors = { 'Shota Shimazu' => 'hornet.live.mf@gmail.com' }
-  s.source = { :git => 'https://github.com/shotastage/Fileable.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/shotastage/Fileable.swift.git', :tag => s.version }
   s.ios.deployment_target = '10.0'
-  s.source_files = 'Source/*.{h,m,swift}'
+  s.source_files = 'Sources/**/*.{h,m,swift}'
 end
