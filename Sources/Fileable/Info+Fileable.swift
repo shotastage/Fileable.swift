@@ -26,6 +26,22 @@ extension Fileable {
         let path = NSHomeDirectory()
         return path
     }
+    
+    /// List contents of specific directory
+    /// - returns: path array
+    public var ls: [String]? {
+
+        var path: [String]? = []
+        
+        do {
+            try path = Fileable.fm.contentsOfDirectory(atPath: self.path)
+            
+        } catch {
+            path = nil
+        }
+        
+        return path
+    }
 }
 
 

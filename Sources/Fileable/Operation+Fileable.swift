@@ -36,10 +36,10 @@ extension Fileable {
         print("This function is not implemented now.")
     }
 
-    public static func touch(_ path: String) throws {
+    public static func touch(at: String) throws {
         let empty = ""
         do {
-            try empty.write(toFile: path, atomically: true, encoding: String.Encoding.utf8)
+            try empty.write(to: URL(string: at)!, atomically: true, encoding: String.Encoding.utf8)
         } catch let error as NSError {
             print("failed to write: \(error)")
         }

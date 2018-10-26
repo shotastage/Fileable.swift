@@ -36,6 +36,16 @@ class Info: XCTestCase {
         XCTAssertFalse(Fileable(file).isFile)
     }
 
+    func testCaseLS() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let file: String = Fileable.home
+        
+        let fileList = Fileable(file).ls!
+        
+        NSLog(String(describing: fileList))
+    }
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         
