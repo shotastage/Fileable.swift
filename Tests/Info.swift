@@ -34,7 +34,6 @@ class Info: XCTestCase {
         let file: String = Fileable.home
         
         XCTAssertFalse(Fileable(file).isFile)
-        
     }
 
     func testPerformanceExample() {

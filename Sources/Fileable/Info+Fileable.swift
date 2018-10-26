@@ -36,13 +36,26 @@ extension Fileable {
     /// Check existence of file
     /// - returns: Return true if designated file exists.
     public var isFile: Bool {
-        return Fileable.fm.fileExists(atPath: self.path)
+        
+        
+        /// MARK: Judge if given path is firectory
+        var isDirectory: ObjCBool = false
+        
+        var result = Fileable.fm.fileExists(atPath: self.path, isDirectory: &isDirectory)
+        
+        /// MARK: If given path is directory, then toggling boolean. It means given path is file
+        result.toggle()
+
+        return result
     }
     
     /// Check existence of directory
     /// - returns: Return true if designated directory exists.
     public var isDir: Bool {
-        return Fileable.fm.fileExists(atPath: self.path)
+        
+        var isDirectory: ObjCBool = false
+
+        return Fileable.fm.fileExists(atPath: self.path, isDirectory: &isDirectory)
     }
     
     public var fileExtension: String {
