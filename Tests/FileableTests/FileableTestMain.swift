@@ -1,7 +1,7 @@
 import Foundation
 import XCTest
-@testable import FileKit // Test target
+@testable import Fileable // Test target
 
-public func FileKitTest() {
+public func fileKitTest() {
     // NO TEST NOW
 }
