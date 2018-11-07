@@ -11,8 +11,8 @@ import Foundation
 extension Path {
     
     public static func cd(_ path: String) throws {
-        if !Fileable.fm.changeCurrentDirectoryPath(path) {
-            if !Fileable.fm.fileExists(atPath: path) {
+        if !Path.fm.changeCurrentDirectoryPath(path) {
+            if !Path.fm.fileExists(atPath: path) {
                 throw FileableError.NotExists
             } else {
                 throw FileableError.Unkown("Failed to change current direcotry.")
@@ -21,15 +21,15 @@ extension Path {
     }
     
     public static func mkdir(_ path: String) throws {
-        try Fileable.fm.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
+        try Path.fm.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
     }
     
     public func rm() throws {
-        try Fileable.fm.removeItem(atPath: self.path)
+        try Path.fm.removeItem(atPath: self.path)
     }
     
     public func mv(to toPath: String) throws {
-        try Fileable.fm.moveItem(atPath: self.path, toPath: toPath)
+        try Path.fm.moveItem(atPath: self.path, toPath: toPath)
     }
 
     public func chmod(mode: Int) throws {

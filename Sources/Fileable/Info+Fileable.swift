@@ -16,8 +16,14 @@ extension Path {
     /// Get current working directory.
     /// - returns: Return current directory path as a string.
     public static var pwd: String {
-        let path = Fileable.fm.currentDirectoryPath
-        return path
+        get {
+            let path = Path.fm.currentDirectoryPath
+            return path
+        }
+        
+        set {
+            try! Path.cd(newValue)
+        }
     }
     
     /// Get home directory.
@@ -34,7 +40,7 @@ extension Path {
         var path: [String]? = []
         
         do {
-            try path = Fileable.fm.contentsOfDirectory(atPath: self.path)
+            try path = Path.fm.contentsOfDirectory(atPath: self.path)
             
         } catch {
             path = nil
@@ -47,7 +53,7 @@ extension Path {
 
 
 // Check file or directory existence
-extension Fileable {
+extension Path {
     
     /// Check existence of file
     /// - returns: Return true if designated file exists.
@@ -57,7 +63,7 @@ extension Fileable {
         /// MARK: Judge if given path is firectory
         var isDirectory: ObjCBool = false
         
-        var result = Fileable.fm.fileExists(atPath: self.path, isDirectory: &isDirectory)
+        var result = Path.fm.fileExists(atPath: self.path, isDirectory: &isDirectory)
         
         /// MARK: If given path is directory, then toggling boolean. It means given path is file
         result.toggle()
@@ -71,7 +77,7 @@ extension Fileable {
         
         var isDirectory: ObjCBool = false
 
-        return Fileable.fm.fileExists(atPath: self.path, isDirectory: &isDirectory)
+        return Path.fm.fileExists(atPath: self.path, isDirectory: &isDirectory)
     }
     
     public var ext: String {
