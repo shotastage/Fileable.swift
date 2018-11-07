@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class Fileable {
+open class Path {
     
     // Path
     var path: String

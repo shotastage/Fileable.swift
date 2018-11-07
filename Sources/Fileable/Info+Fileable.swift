@@ -11,7 +11,7 @@ import Foundation
 
 // Show file information
 
-extension Fileable {
+extension Path {
     
     /// Get current working directory.
     /// - returns: Return current directory path as a string.

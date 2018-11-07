@@ -11,7 +11,7 @@ import Foundation
 
 #if os(iOS) || os(watchOS) || os(tvOS)
     
-    extension Fileable {
+    extension Path {
         
         ///
         /// Deprecated methods

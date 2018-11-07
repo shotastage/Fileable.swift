@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Fileable {
+extension Path {
     
     public static func cd(_ path: String) throws {
         if !Fileable.fm.changeCurrentDirectoryPath(path) {
