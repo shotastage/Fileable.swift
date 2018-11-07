@@ -59,11 +59,11 @@ extension Path {
     
     public var permission: Int {
         get {
-            Path.fm
+            fatalError("This stored property is not implemented now!")
         }
         
         set {
-            
+            fatalError("This stored property is not implemented now!")
         }
     }
 }

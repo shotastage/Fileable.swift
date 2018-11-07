@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		259EE6222133C6D1005ECA44 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259EE6212133C6D1005ECA44 /* Info.swift */; };
 		259EE6242133C915005ECA44 /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259EE6232133C915005ECA44 /* BasicOperation.swift */; };
-		25B7C71821931B4100158BEE /* iOSOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B7C71721931B4100158BEE /* iOSOperation.swift */; };
 		25BACE361F9F9E25000D5127 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BACE351F9F9E25000D5127 /* Errors.swift */; };
 		25BACE381F9F9E6C000D5127 /* Operation+Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BACE371F9F9E6C000D5127 /* Operation+Fileable.swift */; };
 		25BACE3A1F9F9EB3000D5127 /* Fileable+StoredProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BACE391F9F9EB3000D5127 /* Fileable+StoredProperties.swift */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		259EE6212133C6D1005ECA44 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		259EE6232133C915005ECA44 /* BasicOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
-		25B7C71721931B4100158BEE /* iOSOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSOperation.swift; sourceTree = "<group>"; };
 		25BACE351F9F9E25000D5127 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		25BACE371F9F9E6C000D5127 /* Operation+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation+Fileable.swift"; sourceTree = "<group>"; };
 		25BACE391F9F9EB3000D5127 /* Fileable+StoredProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fileable+StoredProperties.swift"; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				D93F1CA81EAEDB6E009A7474 /* Info.plist */,
 				259EE6212133C6D1005ECA44 /* Info.swift */,
 				259EE6232133C915005ECA44 /* BasicOperation.swift */,
-				25B7C71721931B4100158BEE /* iOSOperation.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -238,7 +235,6 @@
 				D93F1CB31EAEDCC9009A7474 /* Fileable.swift in Sources */,
 				25BACE3A1F9F9EB3000D5127 /* Fileable+StoredProperties.swift in Sources */,
 				25BACE361F9F9E25000D5127 /* Errors.swift in Sources */,
-				25B7C71821931B4100158BEE /* iOSOperation.swift in Sources */,
 				25BACE381F9F9E6C000D5127 /* Operation+Fileable.swift in Sources */,
 				25BACE401F9F9F36000D5127 /* FHS+Fileable.swift in Sources */,
 			);
