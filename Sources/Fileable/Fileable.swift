@@ -19,11 +19,15 @@ open class Path {
     
     // Initializers
     public init() {
-        self.path = Fileable.pwd
+        self.path = Path.pwd
     }
     
     public init(_ path: String) {
-        self.path = path
+        if path == "~" {
+            self.path = Path.pwd
+        } else {
+            self.path = path
+        }
     }
 }
 
