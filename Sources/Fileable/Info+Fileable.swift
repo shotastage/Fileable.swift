@@ -26,6 +26,9 @@ extension Path {
         }
     }
     
+    /// Alias of Path.pwd
+    public static var current: String = Path.pwd
+    
     /// Get home directory.
     /// - returns: Return home directory path as a string.
     public static var home: String {

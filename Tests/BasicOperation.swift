@@ -37,7 +37,7 @@ class BasicOperation: XCTestCase {
     func testPwd() {
         let current: String = Path.pwd
         
-        Path.pwd = Path.pwd
+        Path.pwd = Path.current
         
         let moved: String = Path.pwd
         
