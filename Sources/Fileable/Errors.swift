@@ -10,9 +10,29 @@ import Foundation
 
 
 enum FileableError: Error {
-    case NotExists
-    case AleardyExists
+    
+    /// Not Exists
+    case DoesNotExists
+    case FileDoesNotExists
+    case DirectoryDoesNotExists
+    
+    /// File
+    case MakeFileFail
+    case DeleteFileFail
+    
+    /// Directory
+    case MakeDirectoryFail
+    case DeleteDirectoryFail
+    
+    /// Operations
+    case MoveDirectoryFail
+    case ChangeDirectoryFail
     case PermissionError
     case TypeConvertionError
+    
+    /// Previous
+    case AleardyExists
+    
+    /// Default
     case Unkown(String)
 }
