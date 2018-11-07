@@ -24,20 +24,31 @@ class BasicOperation: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let current: String = Fileable.pwd
+        let current: String = Path.pwd
         
-        try? Fileable.cd(Fileable.pwd)
+        try? Path.cd(Path.pwd)
         
-        let moved: String = Fileable.pwd
+        let moved: String = Path.pwd
+        
+        XCTAssertEqual(current, moved)
+    }
+    
+    
+    func testPwd() {
+        let current: String = Path.pwd
+        
+        Path.pwd = Path.pwd
+        
+        let moved: String = Path.pwd
         
         XCTAssertEqual(current, moved)
     }
 
     
     func testMkdir() {
-        try? Fileable.mkdir("TEST_DIR")
+        try? Path.mkdir("TEST_DIR")
     
-        XCTAssertTrue(Fileable(Fileable.pwd + "/TEST_DIR").isDir)
+        XCTAssertTrue(Path(Path.pwd + "/TEST_DIR").isDir)
     }
     
     func testPerformanceExample() {

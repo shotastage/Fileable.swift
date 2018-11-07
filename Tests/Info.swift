@@ -23,25 +23,25 @@ class Info: XCTestCase {
     func testCaseIsDir() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let path: String = Fileable.home
+        let path: String = Path.home
         
-        XCTAssertTrue(Fileable(path).isDir)
+        XCTAssertTrue(Path(path).isDir)
     }
     
     func testCaseIsFile() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let file: String = Fileable.home
+        let file: String = Path.home
         
-        XCTAssertFalse(Fileable(file).isFile)
+        XCTAssertFalse(Path(file).isFile)
     }
 
     func testCaseLS() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let file: String = Fileable.home
+        let file: String = Path.home
         
-        let fileList = Fileable(file).ls!
+        let fileList = Path(file).ls!
         
         NSLog(String(describing: fileList))
     }
@@ -49,10 +49,10 @@ class Info: XCTestCase {
     func testPerformanceExample() {
         // This is an example of a performance test case.
         
-        let path: String = Fileable.home
+        let path: String = Path.home
         
         self.measure {
-            if Fileable(path).isDir {
+            if Path(path).isDir {
                 NSLog(path, "is", "directory", ".")
             }
         }
