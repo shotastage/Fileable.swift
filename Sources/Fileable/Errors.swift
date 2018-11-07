@@ -9,7 +9,7 @@
 import Foundation
 
 
-enum FileableError: Error {
+public enum FileableError: Error {
     
     /// Not Exists
     case DoesNotExists

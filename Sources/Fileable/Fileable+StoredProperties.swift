@@ -54,6 +54,21 @@ extension Path {
 }
 
 
+// Check and Change file or directory permission
+extension Path {
+    
+    public var permission: Int {
+        get {
+            Path.fm
+        }
+        
+        set {
+            
+        }
+    }
+}
+
+
 
 // Check file or directory existence
 extension Path {

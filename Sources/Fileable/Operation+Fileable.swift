@@ -13,7 +13,7 @@ extension Path {
     public static func cd(_ path: String) throws {
         if !Path.fm.changeCurrentDirectoryPath(path) {
             if !Path.fm.fileExists(atPath: path) {
-                throw FileableError.NotExists
+                throw FileableError.DirectoryDoesNotExists
             } else {
                 throw FileableError.Unkown("Failed to change current direcotry.")
             }
