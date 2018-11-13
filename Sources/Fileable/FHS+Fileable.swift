@@ -9,20 +9,53 @@
 import Foundation
 
 #if os(Linux)
-public enum FHS {
+public enum UnixFS {
     
     case root
-    case setting
-    case optional
+    case bin
+    case boot
+    case device
+    case etc
+    case home
+    case lib
+    case media
+    case mnt
+    case opt
+    case proc
+    case rootUser
+    case tmp
+    case usr
     
     var path: String! {
         switch self {
         case .root:
             return "/"
-        case .setting:
+        case .bin:
+            return "/bin/"
+        case .boot:
+            return "/boot/"
+        case .device:
+            return "/dev/"
+        case .etc:
             return "/etc/"
-        case .optional:
+        case .home:
+            return "/home/"
+        case .lib:
+            return "/lib/"
+        case .media:
+            return "/media/"
+        case .mnt:
+            return "/mnt/"
+        case .opt:
             return "/opt/"
+        case .proc:
+            return "/proc/"
+        case .rootUser:
+            return "/rootUser/"
+        case .tmp:
+            return "/tmp/"
+        case .usr:
+            return "/usr/"
         }
     }
 }
