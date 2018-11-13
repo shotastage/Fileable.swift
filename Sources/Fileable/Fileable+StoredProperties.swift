@@ -98,7 +98,7 @@ extension Path {
         return Path.fm.fileExists(atPath: self.path, isDirectory: &isDirectory)
     }
     
-    public var ext: String {
+    public var `extension`: String {
         
         let fileName: String = String(self.path.split(separator: "/").last!)
         
