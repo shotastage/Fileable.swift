@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		25DF38DA21932D5A004D5123 /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520021B219329420052BBA8 /* BasicOperation.swift */; };
 		25DF38DB21932D5C004D5123 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520021D2193294A0052BBA8 /* Info.swift */; };
+		25F1EFE4219B419900687C37 /* iOSDirs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F1EFE3219B419900687C37 /* iOSDirs.swift */; };
 		OBJ_28 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Errors.swift */; };
 		OBJ_29 /* FHS+Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* FHS+Fileable.swift */; };
 		OBJ_30 /* Fileable+StoredProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Fileable+StoredProperties.swift */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		2520021B219329420052BBA8 /* BasicOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
 		2520021D2193294A0052BBA8 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		25F1EFE3219B419900687C37 /* iOSDirs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDirs.swift; sourceTree = "<group>"; };
 		"Fileable::Fileable::Product" /* Fileable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Fileable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Fileable::FileableTests::Product" /* FileableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FileableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* FHS+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FHS+Fileable.swift"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				2520021B219329420052BBA8 /* BasicOperation.swift */,
 				OBJ_17 /* FileableTestMain.swift */,
 				OBJ_18 /* XCTest.swift */,
+				25F1EFE3219B419900687C37 /* iOSDirs.swift */,
 			);
 			name = FileableTests;
 			path = Tests/FileableTests;
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				25F1EFE4219B419900687C37 /* iOSDirs.swift in Sources */,
 				OBJ_28 /* Errors.swift in Sources */,
 				OBJ_29 /* FHS+Fileable.swift in Sources */,
 				OBJ_30 /* Fileable+StoredProperties.swift in Sources */,

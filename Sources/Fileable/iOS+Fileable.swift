@@ -51,13 +51,19 @@ extension Path {
 
 
 
+
+/// iOSDir enum is list of iOS application directories
 public enum iOSDir {
+    
+    /// .document returns iOS Documents directory
     case document
     case inbox
     case library
     case cache
     case tmp
     
+    
+    /// path propaty returns directory path as String type
     var path: String! {
         switch self {
         

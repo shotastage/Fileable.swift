@@ -33,6 +33,16 @@ class BasicOperation: XCTestCase {
         XCTAssertEqual(current, moved)
     }
     
+    func testPwdMoveDir() {
+        let current: String = Path.pwd
+        
+        Path.pwd = Path.pwd
+        
+        let moved: String = Path.pwd
+        
+        XCTAssertEqual(current, moved)
+    }
+    
     
     func testPwd() {
         let current: String = Path.pwd
