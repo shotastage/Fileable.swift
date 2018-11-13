@@ -24,7 +24,7 @@ open class Path {
     
     public init(_ path: String) {
         if path == "~" {
-            self.path = Path.pwd
+            self.path = Path.home
         } else {
             self.path = path
         }
