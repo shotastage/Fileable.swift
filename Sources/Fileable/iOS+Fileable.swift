@@ -51,7 +51,7 @@ extension Path {
 
 
 
-public enum iOS {
+public enum iOSDir {
     case document
     case inbox
     case library
@@ -60,17 +60,17 @@ public enum iOS {
     
     var path: String! {
         switch self {
-            
+        
         case .document:
-            return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+            return Path.fm.urls(for: .documentDirectory, in: .userDomainMask)[0].path
         case .inbox:
-            return ""
+            return Path.fm.urls(for: .documentDirectory, in: .userDomainMask)[0].path
         case .library:
-            return ""
+            return Path.fm.urls(for: .libraryDirectory, in: .userDomainMask)[0].path
         case .cache:
-            return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)[0]
+            return Path.fm.urls(for: .cachesDirectory, in: .userDomainMask)[0].path
         case .tmp:
-            return ""
+            return Path.fm.temporaryDirectory.path
         }
     }
 }
