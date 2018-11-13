@@ -64,7 +64,7 @@ public enum iOSDir {
         case .document:
             return Path.fm.urls(for: .documentDirectory, in: .userDomainMask)[0].path
         case .inbox:
-            return Path.fm.urls(for: .documentDirectory, in: .userDomainMask)[0].path
+            return Path.fm.urls(for: .documentDirectory, in: .userDomainMask)[0].path + "inbox/"
         case .library:
             return Path.fm.urls(for: .libraryDirectory, in: .userDomainMask)[0].path
         case .cache:

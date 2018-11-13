@@ -33,7 +33,7 @@ extension Path {
     }
 
     public func chmod(mode: Int) throws {
-        print("This function is not implemented now.")
+        fatalError("This function is not implemented now.")
     }
 
     public static func touch(at: String) throws {
