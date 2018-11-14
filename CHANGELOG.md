@@ -1,3 +1,7 @@
+## Version 1.1
+
+- Fix building scheme failure
+
 ## Version 1.0.9
 
 - Rename `Fileable` object to `Path`
