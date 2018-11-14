@@ -51,9 +51,8 @@ extension Path {
 
 
 
-
 /// iOSDir enum is list of iOS application directories
-public enum iOSDir {
+public enum IOSDir {
     
     /// .document returns iOS Documents directory
     case document

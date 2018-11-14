@@ -23,12 +23,12 @@ class IOSDirs: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let documentDirectory: String = iOSDir.document.path
-        let libraryDirectory: String = iOSDir.library.path
+        //let documentDirectory: String = IOSDirs.document.path
+        //let libraryDirectory: String = IOSDirs.library.path
         
         NSLog("LOG: ")
-        NSLog(documentDirectory)
-        NSLog(libraryDirectory)
+        // NSLog(documentDirectory)
+        // NSLog(libraryDirectory)
         // XCTAssertEqual(current, moved)
     }
 
