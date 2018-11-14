@@ -1,3 +1,10 @@
+# Version 1.2
+
+- Implement Chmod
+
+- Implement Document Directory Manager
+
+
 ## Version 1.0.9
 
 - Implement Chmod
