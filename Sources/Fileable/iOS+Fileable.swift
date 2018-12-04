@@ -16,12 +16,12 @@ extension Path {
     ///
     /// Deprecated methods
     ///
-    @available(*, unavailable, renamed: "iOSFileSystem.document.path")
+    @available(*, unavailable, renamed: "IOSDirs.document.path")
     static func appDocument() -> String {
         fatalError("appDocument is deprecated!")
     }
         
-    @available(*, unavailable, renamed: "iOSFileSystem.cache.path")
+    @available(*, unavailable, renamed: "IOSDirs.cache.path")
     static func appCache() -> String {
         fatalError("appCache is deprecated!")
     }
@@ -52,7 +52,7 @@ extension Path {
 
 
 /// iOSDir enum is list of iOS application directories
-public enum IOSDir {
+public enum IOSDirs {
     
     /// .document returns iOS Documents directory
     case document

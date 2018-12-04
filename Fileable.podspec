@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Fileable'
-  s.version = '1.0.9'
+  s.version = '1.1'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'Unix command like file management library for Swift.'
   s.description      = <<-DESC
