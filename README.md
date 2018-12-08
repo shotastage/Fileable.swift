@@ -1,4 +1,5 @@
 ![Fileable](./Documentation/filekit_readme.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift?ref=badge_shield)
 
 [![Build Status](https://travis-ci.org/shotastage/Fileable.swift.svg?branch=master)](https://travis-ci.org/shotastage/Fileable.swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/shotasatge/Fileable)
@@ -51,3 +52,6 @@ github "shotastage/Fileable"
 Fileable is licensed under the `MIT`. 
 You can use this library free of charge. Please include copyright notie in your program.
 See [LICENSE](./LICENSE) for detail.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift?ref=badge_large)
