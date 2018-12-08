@@ -13,6 +13,9 @@ open class Path {
     // Path
     var path: String
     
+    // Separator
+    public static let separator: String = "/"
+    
     // Foundational File Manager
     static var fm = FileManager.default
     
@@ -23,11 +26,14 @@ open class Path {
     }
     
     public init(_ path: String) {
+        self.path = path
+        
         if path == "~" {
-            self.path = Path.home
+            if let range = path.range(of: "~") {
+                self.path.replaceSubrange(range, with: Path.home)
+            }
         } else {
             self.path = path
         }
     }
 }
-
