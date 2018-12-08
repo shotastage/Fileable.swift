@@ -105,3 +105,18 @@ extension Path {
         return String(fileName.split(separator: ".").last!)
     }
 }
+
+
+// Path type
+extension Path {
+    
+    /// Return whether path is absolute
+    public var isAbsolute: Bool {
+        return self.path.hasPrefix(Path.separator)
+    }
+    
+    /// Return whether path is relative
+    public var isRelative: Bool {
+        return !isAbsolute
+    }
+}
