@@ -10,6 +10,7 @@ import Foundation
 
 extension Path {
     
+    // TODO: Implement cd clousure like Python with statement
     public static func cd(_ path: String) throws {
         if !Path.fm.changeCurrentDirectoryPath(path) {
             if !Path.fm.fileExists(atPath: path) {
