@@ -48,6 +48,9 @@ github "shotastage/Fileable"
 
 
 # License
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift?ref=badge_large)
+
 Fileable is licensed under the `MIT`. 
 You can use this library free of charge. Please include copyright notie in your program.
 See [LICENSE](./LICENSE) for detail.
