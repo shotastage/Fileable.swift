@@ -13,6 +13,9 @@ open class Path {
     // Path
     var path: String
     
+    // Separator
+    public var separator: String = "/"
+    
     // Foundational File Manager
     static var fm = FileManager.default
     
