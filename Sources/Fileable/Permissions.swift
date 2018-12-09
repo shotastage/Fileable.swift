@@ -11,4 +11,5 @@ import Foundation
 public enum FileablePermissions {
     case Readable
     case Writeable
+    case ReadOnly
 }

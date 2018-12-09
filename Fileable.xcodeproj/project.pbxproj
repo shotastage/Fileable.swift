@@ -1,519 +1,521 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {
-    };
-    objectVersion = 46;
-    objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
 
 /* Begin PBXAggregateTarget section */
-        "Fileable::FileablePackageTests::ProductTarget" /* FileablePackageTests */ = {
-            isa = PBXAggregateTarget;
-            buildConfigurationList = OBJ_42 /* Build configuration list for PBXAggregateTarget "FileablePackageTests" */;
-            buildPhases = (
-            );
-            dependencies = (
-                OBJ_45 /* PBXTargetDependency */,
-            );
-            name = FileablePackageTests;
-            productName = FileablePackageTests;
-        };
+		"Fileable::FileablePackageTests::ProductTarget" /* FileablePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_42 /* Build configuration list for PBXAggregateTarget "FileablePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_45 /* PBXTargetDependency */,
+			);
+			name = FileablePackageTests;
+			productName = FileablePackageTests;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		250ECC8F21B622E600F6FEE9 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250ECC8E21B622E600F6FEE9 /* Permissions.swift */; };
-        25DF38DA21932D5A004D5123 /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520021B219329420052BBA8 /* BasicOperation.swift */; };
-        25DF38DB21932D5C004D5123 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520021D2193294A0052BBA8 /* Info.swift */; };
-        OBJ_28 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Errors.swift */; };
-        OBJ_29 /* FHS+Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* FHS+Fileable.swift */; };
-        OBJ_30 /* Fileable+StoredProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Fileable+StoredProperties.swift */; };
-        OBJ_31 /* Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Fileable.swift */; };
-        OBJ_32 /* Operation+Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Operation+Fileable.swift */; };
-        OBJ_33 /* iOS+Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* iOS+Fileable.swift */; };
-        OBJ_40 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-        OBJ_51 /* FileableTestMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FileableTestMain.swift */; };
-        OBJ_52 /* XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* XCTest.swift */; };
-        OBJ_54 /* Fileable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Fileable::Fileable::Product" /* Fileable.framework */; };
+		256A46B821BCF2B400B84F4D /* ZipArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A46B721BCF2B400B84F4D /* ZipArchive.swift */; };
+		25DF38DA21932D5A004D5123 /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520021B219329420052BBA8 /* BasicOperation.swift */; };
+		25DF38DB21932D5C004D5123 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520021D2193294A0052BBA8 /* Info.swift */; };
+		OBJ_28 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Errors.swift */; };
+		OBJ_29 /* FHS+Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* FHS+Fileable.swift */; };
+		OBJ_30 /* Fileable+StoredProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Fileable+StoredProperties.swift */; };
+		OBJ_31 /* Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Fileable.swift */; };
+		OBJ_32 /* Operation+Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Operation+Fileable.swift */; };
+		OBJ_33 /* iOS+Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* iOS+Fileable.swift */; };
+		OBJ_40 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_51 /* FileableTestMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FileableTestMain.swift */; };
+		OBJ_52 /* XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* XCTest.swift */; };
+		OBJ_54 /* Fileable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Fileable::Fileable::Product" /* Fileable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-        25B7C73021931F8700158BEE /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = OBJ_1 /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = "Fileable::Fileable";
-            remoteInfo = Fileable;
-        };
-        25B7C73121931F8900158BEE /* PBXContainerItemProxy */ = {
-            isa = PBXContainerItemProxy;
-            containerPortal = OBJ_1 /* Project object */;
-            proxyType = 1;
-            remoteGlobalIDString = "Fileable::FileableTests";
-            remoteInfo = FileableTests;
-        };
+		25B7C73021931F8700158BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Fileable::Fileable";
+			remoteInfo = Fileable;
+		};
+		25B7C73121931F8900158BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Fileable::FileableTests";
+			remoteInfo = FileableTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-        250ECC8E21B622E600F6FEE9 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
-        2520021B219329420052BBA8 /* BasicOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
-        2520021D2193294A0052BBA8 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
-        25F1EFE3219B419900687C37 /* iOSDirs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDirs.swift; sourceTree = "<group>"; };
-        "Fileable::Fileable::Product" /* Fileable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Fileable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-        "Fileable::FileableTests::Product" /* FileableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FileableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-        OBJ_10 /* FHS+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FHS+Fileable.swift"; sourceTree = "<group>"; };
-        OBJ_11 /* Fileable+StoredProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fileable+StoredProperties.swift"; sourceTree = "<group>"; };
-        OBJ_12 /* Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fileable.swift; sourceTree = "<group>"; };
-        OBJ_13 /* Operation+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation+Fileable.swift"; sourceTree = "<group>"; };
-        OBJ_14 /* iOS+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS+Fileable.swift"; sourceTree = "<group>"; };
-        OBJ_17 /* FileableTestMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileableTestMain.swift; sourceTree = "<group>"; };
-        OBJ_18 /* XCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTest.swift; sourceTree = "<group>"; };
-        OBJ_19 /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = SOURCE_ROOT; };
-        OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-        OBJ_9 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		250ECC8E21B622E600F6FEE9 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		2520021B219329420052BBA8 /* BasicOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
+		2520021D2193294A0052BBA8 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		256A46B721BCF2B400B84F4D /* ZipArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipArchive.swift; sourceTree = "<group>"; };
+		25F1EFE3219B419900687C37 /* iOSDirs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDirs.swift; sourceTree = "<group>"; };
+		"Fileable::Fileable::Product" /* Fileable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Fileable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Fileable::FileableTests::Product" /* FileableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FileableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* FHS+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FHS+Fileable.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* Fileable+StoredProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fileable+StoredProperties.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fileable.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Operation+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation+Fileable.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* iOS+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS+Fileable.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* FileableTestMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileableTestMain.swift; sourceTree = "<group>"; };
+		OBJ_18 /* XCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTest.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = SOURCE_ROOT; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-        OBJ_34 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 0;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        OBJ_53 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 0;
-            files = (
-                OBJ_54 /* Fileable.framework in Frameworks */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		OBJ_34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_54 /* Fileable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-        OBJ_15 /* Tests */ = {
-            isa = PBXGroup;
-            children = (
-                OBJ_16 /* FileableTests */,
-            );
-            name = Tests;
-            sourceTree = SOURCE_ROOT;
-        };
-        OBJ_16 /* FileableTests */ = {
-            isa = PBXGroup;
-            children = (
-                2520021D2193294A0052BBA8 /* Info.swift */,
-                2520021B219329420052BBA8 /* BasicOperation.swift */,
-                OBJ_17 /* FileableTestMain.swift */,
-                OBJ_18 /* XCTest.swift */,
-                25F1EFE3219B419900687C37 /* iOSDirs.swift */,
-            );
-            name = FileableTests;
-            path = Tests/FileableTests;
-            sourceTree = SOURCE_ROOT;
-        };
-        OBJ_20 /* Products */ = {
-            isa = PBXGroup;
-            children = (
-                "Fileable::FileableTests::Product" /* FileableTests.xctest */,
-                "Fileable::Fileable::Product" /* Fileable.framework */,
-            );
-            name = Products;
-            sourceTree = BUILT_PRODUCTS_DIR;
-        };
-        OBJ_5 = {
-            isa = PBXGroup;
-            children = (
-                OBJ_6 /* Package.swift */,
-                OBJ_7 /* Sources */,
-                OBJ_15 /* Tests */,
-                OBJ_19 /* Documentation */,
-                OBJ_20 /* Products */,
-            );
-            sourceTree = "<group>";
-        };
-        OBJ_7 /* Sources */ = {
-            isa = PBXGroup;
-            children = (
-                OBJ_8 /* Fileable */,
-            );
-            name = Sources;
-            sourceTree = SOURCE_ROOT;
-        };
-        OBJ_8 /* Fileable */ = {
-            isa = PBXGroup;
-            children = (
-                OBJ_9 /* Errors.swift */,
-                OBJ_10 /* FHS+Fileable.swift */,
-                OBJ_11 /* Fileable+StoredProperties.swift */,
-                OBJ_12 /* Fileable.swift */,
-                OBJ_13 /* Operation+Fileable.swift */,
-                OBJ_14 /* iOS+Fileable.swift */,
-                250ECC8E21B622E600F6FEE9 /* Permissions.swift */,
-            );
-            name = Fileable;
-            path = Sources/Fileable;
-            sourceTree = SOURCE_ROOT;
-        };
+		OBJ_15 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* FileableTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* FileableTests */ = {
+			isa = PBXGroup;
+			children = (
+				2520021D2193294A0052BBA8 /* Info.swift */,
+				2520021B219329420052BBA8 /* BasicOperation.swift */,
+				OBJ_17 /* FileableTestMain.swift */,
+				OBJ_18 /* XCTest.swift */,
+				25F1EFE3219B419900687C37 /* iOSDirs.swift */,
+			);
+			name = FileableTests;
+			path = Tests/FileableTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Fileable::FileableTests::Product" /* FileableTests.xctest */,
+				"Fileable::Fileable::Product" /* Fileable.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_15 /* Tests */,
+				OBJ_19 /* Documentation */,
+				OBJ_20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Fileable */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* Fileable */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Errors.swift */,
+				OBJ_10 /* FHS+Fileable.swift */,
+				OBJ_11 /* Fileable+StoredProperties.swift */,
+				OBJ_12 /* Fileable.swift */,
+				OBJ_13 /* Operation+Fileable.swift */,
+				OBJ_14 /* iOS+Fileable.swift */,
+				250ECC8E21B622E600F6FEE9 /* Permissions.swift */,
+				256A46B721BCF2B400B84F4D /* ZipArchive.swift */,
+			);
+			name = Fileable;
+			path = Sources/Fileable;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-        "Fileable::Fileable" /* Fileable */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = OBJ_24 /* Build configuration list for PBXNativeTarget "Fileable" */;
-            buildPhases = (
-                OBJ_27 /* Sources */,
-                OBJ_34 /* Frameworks */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-            );
-            name = Fileable;
-            productName = Fileable;
-            productReference = "Fileable::Fileable::Product" /* Fileable.framework */;
-            productType = "com.apple.product-type.framework";
-        };
-        "Fileable::FileableTests" /* FileableTests */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = OBJ_47 /* Build configuration list for PBXNativeTarget "FileableTests" */;
-            buildPhases = (
-                OBJ_50 /* Sources */,
-                OBJ_53 /* Frameworks */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-                OBJ_55 /* PBXTargetDependency */,
-            );
-            name = FileableTests;
-            productName = FileableTests;
-            productReference = "Fileable::FileableTests::Product" /* FileableTests.xctest */;
-            productType = "com.apple.product-type.bundle.unit-test";
-        };
-        "Fileable::SwiftPMPackageDescription" /* FileablePackageDescription */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "FileablePackageDescription" */;
-            buildPhases = (
-                OBJ_39 /* Sources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-            );
-            name = FileablePackageDescription;
-            productName = FileablePackageDescription;
-            productType = "com.apple.product-type.framework";
-        };
+		"Fileable::Fileable" /* Fileable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_24 /* Build configuration list for PBXNativeTarget "Fileable" */;
+			buildPhases = (
+				OBJ_27 /* Sources */,
+				OBJ_34 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fileable;
+			productName = Fileable;
+			productReference = "Fileable::Fileable::Product" /* Fileable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Fileable::FileableTests" /* FileableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_47 /* Build configuration list for PBXNativeTarget "FileableTests" */;
+			buildPhases = (
+				OBJ_50 /* Sources */,
+				OBJ_53 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_55 /* PBXTargetDependency */,
+			);
+			name = FileableTests;
+			productName = FileableTests;
+			productReference = "Fileable::FileableTests::Product" /* FileableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Fileable::SwiftPMPackageDescription" /* FileablePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "FileablePackageDescription" */;
+			buildPhases = (
+				OBJ_39 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileablePackageDescription;
+			productName = FileablePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-        OBJ_1 /* Project object */ = {
-            isa = PBXProject;
-            attributes = {
-                LastUpgradeCheck = 9999;
-                TargetAttributes = {
-                    "Fileable::Fileable" = {
-                        LastSwiftMigration = 1010;
-                    };
-                    "Fileable::FileableTests" = {
-                        LastSwiftMigration = 1010;
-                    };
-                };
-            };
-            buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Fileable" */;
-            compatibilityVersion = "Xcode 3.2";
-            developmentRegion = English;
-            hasScannedForEncodings = 0;
-            knownRegions = (
-                en,
-            );
-            mainGroup = OBJ_5;
-            productRefGroup = OBJ_20 /* Products */;
-            projectDirPath = "";
-            projectRoot = "";
-            targets = (
-                "Fileable::Fileable" /* Fileable */,
-                "Fileable::SwiftPMPackageDescription" /* FileablePackageDescription */,
-                "Fileable::FileablePackageTests::ProductTarget" /* FileablePackageTests */,
-                "Fileable::FileableTests" /* FileableTests */,
-            );
-        };
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"Fileable::Fileable" = {
+						LastSwiftMigration = 1010;
+					};
+					"Fileable::FileableTests" = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Fileable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Fileable::Fileable" /* Fileable */,
+				"Fileable::SwiftPMPackageDescription" /* FileablePackageDescription */,
+				"Fileable::FileablePackageTests::ProductTarget" /* FileablePackageTests */,
+				"Fileable::FileableTests" /* FileableTests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-        OBJ_27 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 0;
-            files = (
-                250ECC8F21B622E600F6FEE9 /* Permissions.swift in Sources */,
-                25F1EFE4219B419900687C37 /* iOSDirs.swift in Sources */,
-                OBJ_28 /* Errors.swift in Sources */,
-                OBJ_29 /* FHS+Fileable.swift in Sources */,
-                OBJ_30 /* Fileable+StoredProperties.swift in Sources */,
-                OBJ_31 /* Fileable.swift in Sources */,
-                OBJ_32 /* Operation+Fileable.swift in Sources */,
-                OBJ_33 /* iOS+Fileable.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        OBJ_39 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 0;
-            files = (
-                OBJ_40 /* Package.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        OBJ_50 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 0;
-            files = (
-                25081F8F219BE5D300D2E468 /* iOSDirs.swift in Sources */,
-                OBJ_51 /* FileableTestMain.swift in Sources */,
-                25DF38DB21932D5C004D5123 /* Info.swift in Sources */,
-                OBJ_52 /* XCTest.swift in Sources */,
-                25DF38DA21932D5A004D5123 /* BasicOperation.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		OBJ_27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				256A46B821BCF2B400B84F4D /* ZipArchive.swift in Sources */,
+				250ECC8F21B622E600F6FEE9 /* Permissions.swift in Sources */,
+				OBJ_28 /* Errors.swift in Sources */,
+				OBJ_29 /* FHS+Fileable.swift in Sources */,
+				OBJ_30 /* Fileable+StoredProperties.swift in Sources */,
+				OBJ_31 /* Fileable.swift in Sources */,
+				OBJ_32 /* Operation+Fileable.swift in Sources */,
+				OBJ_33 /* iOS+Fileable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_40 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_51 /* FileableTestMain.swift in Sources */,
+				25DF38DB21932D5C004D5123 /* Info.swift in Sources */,
+				OBJ_52 /* XCTest.swift in Sources */,
+				25DF38DA21932D5A004D5123 /* BasicOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-        OBJ_45 /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = "Fileable::FileableTests" /* FileableTests */;
-            targetProxy = 25B7C73121931F8900158BEE /* PBXContainerItemProxy */;
-        };
-        OBJ_55 /* PBXTargetDependency */ = {
-            isa = PBXTargetDependency;
-            target = "Fileable::Fileable" /* Fileable */;
-            targetProxy = 25B7C73021931F8700158BEE /* PBXContainerItemProxy */;
-        };
+		OBJ_45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Fileable::FileableTests" /* FileableTests */;
+			targetProxy = 25B7C73121931F8900158BEE /* PBXContainerItemProxy */;
+		};
+		OBJ_55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Fileable::Fileable" /* Fileable */;
+			targetProxy = 25B7C73021931F8700158BEE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-        OBJ_25 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                APPLICATION_EXTENSION_API_ONLY = NO;
-                ENABLE_TESTABILITY = YES;
-                FRAMEWORK_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-                );
-                HEADER_SEARCH_PATHS = "$(inherited)";
-                INFOPLIST_FILE = Fileable.xcodeproj/Fileable_Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-                OTHER_CFLAGS = "$(inherited)";
-                OTHER_LDFLAGS = "$(inherited)";
-                OTHER_SWIFT_FLAGS = "$(inherited)";
-                PRODUCT_BUNDLE_IDENTIFIER = Fileable;
-                PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-                PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-                SKIP_INSTALL = YES;
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-                SWIFT_VERSION = 4.2;
-                TARGET_NAME = Fileable;
-            };
-            name = Debug;
-        };
-        OBJ_26 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                APPLICATION_EXTENSION_API_ONLY = NO;
-                ENABLE_TESTABILITY = YES;
-                FRAMEWORK_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-                );
-                HEADER_SEARCH_PATHS = "$(inherited)";
-                INFOPLIST_FILE = Fileable.xcodeproj/Fileable_Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-                OTHER_CFLAGS = "$(inherited)";
-                OTHER_LDFLAGS = "$(inherited)";
-                OTHER_SWIFT_FLAGS = "$(inherited)";
-                PRODUCT_BUNDLE_IDENTIFIER = Fileable;
-                PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-                PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-                SKIP_INSTALL = YES;
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-                SWIFT_VERSION = 4.2;
-                TARGET_NAME = Fileable;
-            };
-            name = Release;
-        };
-        OBJ_3 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                CLANG_ENABLE_OBJC_ARC = YES;
-                COMBINE_HIDPI_IMAGES = YES;
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = dwarf;
-                DYLIB_INSTALL_NAME_BASE = "@rpath";
-                ENABLE_NS_ASSERTIONS = YES;
-                GCC_OPTIMIZATION_LEVEL = 0;
-                GCC_PREPROCESSOR_DEFINITIONS = (
-                    "DEBUG=1",
-                    "$(inherited)",
-                );
-                IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-                MACOSX_DEPLOYMENT_TARGET = 10.10;
-                ONLY_ACTIVE_ARCH = YES;
-                OTHER_SWIFT_FLAGS = "-DXcode";
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SDKROOT = macosx;
-                SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
-                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-                USE_HEADERMAP = NO;
-            };
-            name = Debug;
-        };
-        OBJ_37 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                LD = /usr/bin/true;
-                OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-                SWIFT_VERSION = 4.0;
-            };
-            name = Debug;
-        };
-        OBJ_38 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                LD = /usr/bin/true;
-                OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-                SWIFT_VERSION = 4.0;
-            };
-            name = Release;
-        };
-        OBJ_4 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                CLANG_ENABLE_OBJC_ARC = YES;
-                COMBINE_HIDPI_IMAGES = YES;
-                COPY_PHASE_STRIP = YES;
-                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-                DYLIB_INSTALL_NAME_BASE = "@rpath";
-                GCC_OPTIMIZATION_LEVEL = s;
-                IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-                MACOSX_DEPLOYMENT_TARGET = 10.10;
-                OTHER_SWIFT_FLAGS = "-DXcode";
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SDKROOT = macosx;
-                SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-                USE_HEADERMAP = NO;
-            };
-            name = Release;
-        };
-        OBJ_43 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-            };
-            name = Debug;
-        };
-        OBJ_44 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-            };
-            name = Release;
-        };
-        OBJ_48 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                CLANG_ENABLE_MODULES = YES;
-                EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-                FRAMEWORK_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-                );
-                HEADER_SEARCH_PATHS = "$(inherited)";
-                INFOPLIST_FILE = Fileable.xcodeproj/FileableTests_Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-                OTHER_CFLAGS = "$(inherited)";
-                OTHER_LDFLAGS = "$(inherited)";
-                OTHER_SWIFT_FLAGS = "$(inherited)";
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-                SWIFT_VERSION = 4.2;
-                TARGET_NAME = FileableTests;
-            };
-            name = Debug;
-        };
-        OBJ_49 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                CLANG_ENABLE_MODULES = YES;
-                EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-                FRAMEWORK_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-                );
-                HEADER_SEARCH_PATHS = "$(inherited)";
-                INFOPLIST_FILE = Fileable.xcodeproj/FileableTests_Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-                OTHER_CFLAGS = "$(inherited)";
-                OTHER_LDFLAGS = "$(inherited)";
-                OTHER_SWIFT_FLAGS = "$(inherited)";
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-                SWIFT_VERSION = 4.2;
-                TARGET_NAME = FileableTests;
-            };
-            name = Release;
-        };
+		OBJ_25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Fileable.xcodeproj/Fileable_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Fileable;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Fileable;
+			};
+			name = Debug;
+		};
+		OBJ_26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Fileable.xcodeproj/Fileable_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Fileable;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Fileable;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Fileable.xcodeproj/FileableTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = FileableTests;
+			};
+			name = Debug;
+		};
+		OBJ_49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Fileable.xcodeproj/FileableTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = FileableTests;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-        OBJ_2 /* Build configuration list for PBXProject "Fileable" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                OBJ_3 /* Debug */,
-                OBJ_4 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        OBJ_24 /* Build configuration list for PBXNativeTarget "Fileable" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                OBJ_25 /* Debug */,
-                OBJ_26 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        OBJ_36 /* Build configuration list for PBXNativeTarget "FileablePackageDescription" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                OBJ_37 /* Debug */,
-                OBJ_38 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        OBJ_42 /* Build configuration list for PBXAggregateTarget "FileablePackageTests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                OBJ_43 /* Debug */,
-                OBJ_44 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        OBJ_47 /* Build configuration list for PBXNativeTarget "FileableTests" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                OBJ_48 /* Debug */,
-                OBJ_49 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
+		OBJ_2 /* Build configuration list for PBXProject "Fileable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_24 /* Build configuration list for PBXNativeTarget "Fileable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_25 /* Debug */,
+				OBJ_26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_36 /* Build configuration list for PBXNativeTarget "FileablePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_42 /* Build configuration list for PBXAggregateTarget "FileablePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_43 /* Debug */,
+				OBJ_44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_47 /* Build configuration list for PBXNativeTarget "FileableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_48 /* Debug */,
+				OBJ_49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-    };
-    rootObject = OBJ_1 /* Project object */;
+	};
+	rootObject = OBJ_1 /* Project object */;
 }
