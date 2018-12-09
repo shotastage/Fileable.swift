@@ -65,10 +65,10 @@
 /* Begin PBXFileReference section */
 		250ECC8E21B622E600F6FEE9 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		2517AB2821BD714500695532 /* PathTypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTypeCasting.swift; sourceTree = "<group>"; };
+		2517AB3121BD7C7900695532 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		2520021B219329420052BBA8 /* BasicOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
 		2520021D2193294A0052BBA8 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		256A46B721BCF2B400B84F4D /* ZipArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipArchive.swift; sourceTree = "<group>"; };
-		25A6BD0821BD3CCF005D445C /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		25A6BD5121BD435D005D445C /* zip.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zip.mm; sourceTree = "<group>"; };
 		25A6BD5321BD435D005D445C /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
 		25A6BD5621BD435E005D445C /* mztools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mztools.m; sourceTree = "<group>"; };
@@ -134,7 +134,6 @@
 				25A6BD5A21BD435F005D445C /* unzip.h */,
 				25A6BD5121BD435D005D445C /* zip.mm */,
 				25A6BD5821BD435E005D445C /* zip.h */,
-				25A6BD0821BD3CCF005D445C /* module.modulemap */,
 			);
 			path = minizip;
 			sourceTree = "<group>";
@@ -211,6 +210,7 @@
 				250ECC8E21B622E600F6FEE9 /* Permissions.swift */,
 				256A46B721BCF2B400B84F4D /* ZipArchive.swift */,
 				25A6BD6C21BD62B5005D445C /* Utilities.swift */,
+				2517AB3121BD7C7900695532 /* Bridging-Header.h */,
 			);
 			name = Fileable;
 			path = Sources/Fileable;
@@ -385,7 +385,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/$(PROJECT_NAME)/minizip/**";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Fileable/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Fileable;
@@ -416,7 +417,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/$(PROJECT_NAME)/minizip/**";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Fileable/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Fileable;
 			};

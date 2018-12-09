@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import MiniZip
 
 
 
@@ -58,6 +57,8 @@ class FileableZipArchiver {
         if unzGoToFirstFile(unzipTarget) != UNZ_OK {
             throw FileableError.ZipExtractFailure
         }
+        
+        
         
         
         
