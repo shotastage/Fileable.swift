@@ -112,7 +112,7 @@ extension Path {
     
     /// Return whether path is absolute
     public var isAbsolute: Bool {
-        return self.path.hasPrefix(Path.separator)
+        return self.path.hasPrefix("/")
     }
     
     /// Return whether path is relative

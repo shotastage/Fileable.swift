@@ -13,9 +13,6 @@ open class Path {
     // Path
     var path: String
     
-    // Separator
-    public static let separator: String = "/"
-    
     // Foundational File Manager
     static var fm = FileManager.default
     

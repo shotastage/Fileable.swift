@@ -36,6 +36,45 @@ public enum ZipCompressionLevel {
     
 }
 
+
+
+class FileableZipArchiver {
+    
+    // TODO: Complete implementing unzip method
+    func unzipFile(file: String, password: String?) throws {
+        
+        // Unzip set up
+        var ret: Int32 = 0
+        var crc_ret: Int32 = 0
+        let bufferSize: UInt32 = 4096
+        var buffer = Array<CUnsignedChar>(repeating: 0, count: Int(bufferSize))
+        
+        
+        /// Open Zip file
+        let unzipTarget = unzOpen64(file)
+        
+        /// Procedure
+        if unzGoToFirstFile(unzipTarget) != UNZ_OK {
+            throw FileableError.ZipExtractFailure
+        }
+        
+        
+        
+        /// Close Zip file
+        defer {
+            unzClose(unzipTarget)
+        }
+    }
+    
+    
+    // TODO: Complete implementing zip method
+    func zipFile(file: String, password: String?, level: ZipCompressionLevel) throws {
+        throw FileableError.ZipCompressFailure
+    }
+}
+
+
+
 extension Path {
     
     func unzip(password: String? = nil) throws {
