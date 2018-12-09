@@ -50,11 +50,6 @@
 #define ftello64 ftell
 #define fseeko64 fseek
 #else
-#ifdef __FreeBSD__
-#define fopen64 fopen
-#define ftello64 ftello
-#define fseeko64 fseeko
-#endif
 #ifdef _MSC_VER
  #define fopen64 fopen
  #if (_MSC_VER >= 1400) && (!(defined(NO_MSCVER_FILE64_FUNC)))
@@ -77,10 +72,6 @@
   #endif
 #endif
 */
-
-#ifdef HAVE_MINIZIP64_CONF_H
-#import "mz64conf.h"
-#endif
 
 /* a type choosen by DEFINE */
 #ifdef HAVE_64BIT_INT_CUSTOM
