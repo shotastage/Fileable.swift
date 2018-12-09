@@ -6,6 +6,7 @@
 ![iOS 10+](https://img.shields.io/badge/iOS-10%2B-blue.svg?style=flat)
 ![Linux supported](https://img.shields.io/badge/Linux-supported-5D9CEC.svg?style=flat)
 ![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift?ref=badge_shield)
 
 
 Fileable is file utilities for Swift.
@@ -48,6 +49,10 @@ github "shotastage/Fileable"
 
 
 # License
+
 Fileable is licensed under the `MIT`. 
 You can use this library free of charge. Please include copyright notie in your program.
 See [LICENSE](./LICENSE) for detail.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshotastage%2FFileable.swift?ref=badge_large)
