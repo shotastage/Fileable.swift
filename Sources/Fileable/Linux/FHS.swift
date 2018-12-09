@@ -1,5 +1,5 @@
 //
-//  Linux+Fileable.swift
+//  FHS.swift
 //  Fileable
 //
 //  Created by Shota Shimazu on 2017/10/25.
@@ -9,6 +9,16 @@
 import Foundation
 
 #if os(Linux)
+open class FileableLinux {
+    
+    public static let shared = FileableLinux()
+    
+    
+    private init() { }
+    
+}
+
+
 public enum UnixFS {
     
     case root

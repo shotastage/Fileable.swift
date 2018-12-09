@@ -24,6 +24,10 @@ open class Path {
     static let ios = FileableIOS.shared
     #endif
     
+    #if os(Linux)
+    static let linux = FileableLinux.shared
+    #endif
+    
     
     // Initializers
     public required init() {
