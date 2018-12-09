@@ -78,8 +78,12 @@ class FileableZipArchiver {
 
 extension Path {
     
+    // TODO: Implement unzip
     func unzip(password: String? = nil) throws {
-        // TODO: Implement unzip
+        
+        guard !Path(self.path).isDir else {
+            throw FileableError.InvalidZipFile
+        }
     }
     
     
