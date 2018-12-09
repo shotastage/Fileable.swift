@@ -23,6 +23,10 @@
 /* Begin PBXBuildFile section */
 		250ECC8F21B622E600F6FEE9 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250ECC8E21B622E600F6FEE9 /* Permissions.swift */; };
 		256A46B821BCF2B400B84F4D /* ZipArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A46B721BCF2B400B84F4D /* ZipArchive.swift */; };
+		25A6BD6621BD4362005D445C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 25A6BD5121BD435D005D445C /* zip.c */; };
+		25A6BD6821BD4362005D445C /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 25A6BD5621BD435E005D445C /* mztools.c */; };
+		25A6BD6921BD4362005D445C /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 25A6BD5721BD435E005D445C /* unzip.c */; };
+		25A6BD6A21BD4362005D445C /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 25A6BD5B21BD435F005D445C /* ioapi.c */; };
 		25DF38DA21932D5A004D5123 /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520021B219329420052BBA8 /* BasicOperation.swift */; };
 		25DF38DB21932D5C004D5123 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520021D2193294A0052BBA8 /* Info.swift */; };
 		OBJ_28 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Errors.swift */; };
@@ -59,6 +63,16 @@
 		2520021B219329420052BBA8 /* BasicOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
 		2520021D2193294A0052BBA8 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		256A46B721BCF2B400B84F4D /* ZipArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipArchive.swift; sourceTree = "<group>"; };
+		25A6BD0821BD3CCF005D445C /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		25A6BD5121BD435D005D445C /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		25A6BD5321BD435D005D445C /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		25A6BD5621BD435E005D445C /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		25A6BD5721BD435E005D445C /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		25A6BD5821BD435E005D445C /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		25A6BD5A21BD435F005D445C /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		25A6BD5B21BD435F005D445C /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		25A6BD5E21BD4360005D445C /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		25A6BD6121BD4361005D445C /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
 		25F1EFE3219B419900687C37 /* iOSDirs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDirs.swift; sourceTree = "<group>"; };
 		"Fileable::Fileable::Product" /* Fileable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Fileable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Fileable::FileableTests::Product" /* FileableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = FileableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25A6BD0721BD3CBB005D445C /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				25A6BD6121BD4361005D445C /* crypt.h */,
+				25A6BD5B21BD435F005D445C /* ioapi.c */,
+				25A6BD5321BD435D005D445C /* ioapi.h */,
+				25A6BD5621BD435E005D445C /* mztools.c */,
+				25A6BD5E21BD4360005D445C /* mztools.h */,
+				25A6BD5721BD435E005D445C /* unzip.c */,
+				25A6BD5A21BD435F005D445C /* unzip.h */,
+				25A6BD5121BD435D005D445C /* zip.c */,
+				25A6BD5821BD435E005D445C /* zip.h */,
+				25A6BD0821BD3CCF005D445C /* module.modulemap */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
 		OBJ_15 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +176,7 @@
 		OBJ_8 /* Fileable */ = {
 			isa = PBXGroup;
 			children = (
+				25A6BD0721BD3CBB005D445C /* minizip */,
 				OBJ_9 /* Errors.swift */,
 				OBJ_10 /* FHS+Fileable.swift */,
 				OBJ_11 /* Fileable+StoredProperties.swift */,
@@ -249,14 +281,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				25A6BD6621BD4362005D445C /* zip.c in Sources */,
 				256A46B821BCF2B400B84F4D /* ZipArchive.swift in Sources */,
 				250ECC8F21B622E600F6FEE9 /* Permissions.swift in Sources */,
 				OBJ_28 /* Errors.swift in Sources */,
 				OBJ_29 /* FHS+Fileable.swift in Sources */,
 				OBJ_30 /* Fileable+StoredProperties.swift in Sources */,
+				25A6BD6921BD4362005D445C /* unzip.c in Sources */,
+				25A6BD6A21BD4362005D445C /* ioapi.c in Sources */,
 				OBJ_31 /* Fileable.swift in Sources */,
 				OBJ_32 /* Operation+Fileable.swift in Sources */,
 				OBJ_33 /* iOS+Fileable.swift in Sources */,
+				25A6BD6821BD4362005D445C /* mztools.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +335,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +346,7 @@
 				INFOPLIST_FILE = Fileable.xcodeproj/Fileable_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MODULEMAP_FILE = "";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -316,6 +355,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/$(PROJECT_NAME)/minizip/**";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Fileable;
 			};
@@ -325,6 +366,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,6 +377,7 @@
 				INFOPLIST_FILE = Fileable.xcodeproj/Fileable_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MODULEMAP_FILE = "";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -342,6 +386,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/$(PROJECT_NAME)/minizip/**";
 				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Fileable;
 			};

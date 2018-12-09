@@ -21,7 +21,7 @@ extension Path {
         }
     }
     
-    public static func mkdir(_ path: String) throws {
+    public static func mkdirSwift(_ path: String) throws {
         try Path.fm.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
     }
     

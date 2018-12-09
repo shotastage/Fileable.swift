@@ -6,16 +6,17 @@
 //
 
 import Foundation
+import MiniZip
 
 
 extension Path {
     
-    func unzip() {
-        
+    func unzip(password: String? = nil) throws {
+        // TODO: Implement unzip
     }
     
     
-    func compress(password: String? = nil) {
-        ///
+    func compress(password: String? = nil) throws {
+        // TODO: Implement zipping
     }
 }

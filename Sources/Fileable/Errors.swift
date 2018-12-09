@@ -33,6 +33,11 @@ public enum FileableError: Error {
     /// Previous
     case AleardyExists
     
+    /// Zip
+    case InvalidZipFile
+    case ZipCompressFailure
+    case ZipExtractFailure
+    
     /// Default
     case Unkown(String)
 }
