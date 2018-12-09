@@ -26,19 +26,28 @@ open class Path {
     
     
     // Initializers
-    public init() {
+    public required init() {
         self.path = Path.pwd
     }
     
-    public init(_ path: String) {
-        self.path = path
+    public init<T>(_ path: T) {
         
-        if path == "~" {
-            if let range = path.range(of: "~") {
+        let castedPath: String
+        
+        /// Compatible for both String and URL type
+        if let pathURL: URL = path as? URL {
+            castedPath = pathURL.path
+        } else {
+            castedPath = path as! String
+        }
+        
+        
+        self.path = castedPath
+        
+        if castedPath == "~" {
+            if let range = castedPath.range(of: "~") {
                 self.path.replaceSubrange(range, with: Path.home)
             }
-        } else {
-            self.path = path
         }
     }
 }

@@ -20,9 +20,13 @@ extension Path {
             }
         }
     }
-    
-    public static func mkdir(_ path: String) throws {
-        try Path.fm.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
+
+    public static func mkdir(_ paths: String..., ignoreError: Bool = true) throws {
+        
+        for path in paths {
+            try Path.fm.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
+        }
+        
     }
     
     public func rm() throws {
