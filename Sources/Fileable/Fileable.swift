@@ -19,6 +19,11 @@ open class Path {
     // Foundational File Manager
     static var fm = FileManager.default
     
+    // Services
+    #if os(iOS) || os(watchOS) || os(tvOS)
+    static let ios = FileableIOS.shared
+    #endif
+    
     
     // Initializers
     public init() {
