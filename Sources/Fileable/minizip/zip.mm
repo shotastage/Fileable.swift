@@ -22,22 +22,22 @@
 */
 
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include "zlib.h"
-#include "zip.h"
+#import <stdio.h>
+#import <stdlib.h>
+#import <string.h>
+#import <time.h>
+#import "zlib.h"
+#import "zip.h"
 
 #ifdef STDC
-#  include <stddef.h>
-#  include <string.h>
-#  include <stdlib.h>
+#import <stddef.h>
+#import <string.h>
+#import <stdlib.h>
 #endif
 #ifdef NO_ERRNO_H
     extern int errno;
 #else
-#   include <errno.h>
+#   import <errno.h>
 #endif
 
 
@@ -183,7 +183,7 @@ typedef struct
 
 #ifndef NOCRYPT
 #define INCLUDECRYPTINGCODE_IFCRYPTALLOWED
-#include "crypt.h"
+#import "crypt.h"
 #endif
 
 local linkedlist_datablock_internal* allocate_new_datablock()

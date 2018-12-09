@@ -12,7 +12,7 @@ extern "C" {
 #endif
 
 #ifndef _ZLIB_H
-#include "zlib.h"
+#import "zlib.h"
 #endif
 
 #include "unzip.h"

@@ -41,9 +41,9 @@
 
 #endif
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "zlib.h"
+#import <stdio.h>
+#import <stdlib.h>
+#import "zlib.h"
 
 #if defined(USE_FILE32API)
 #define fopen64 fopen
@@ -79,7 +79,7 @@
 */
 
 #ifdef HAVE_MINIZIP64_CONF_H
-#include "mz64conf.h"
+#import "mz64conf.h"
 #endif
 
 /* a type choosen by DEFINE */
@@ -87,7 +87,7 @@
 typedef  64BIT_INT_CUSTOM_TYPE ZPOS64_T;
 #else
 #ifdef HAS_STDINT_H
-#include "stdint.h"
+#import "stdint.h"
 typedef uint64_t ZPOS64_T;
 #else
 

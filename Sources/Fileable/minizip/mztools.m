@@ -5,11 +5,11 @@
 */
 
 /* Code */
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "zlib.h"
-#include "unzip.h"
+#import <stdio.h>
+#import <stdlib.h>
+#import <string.h>
+#import "zlib.h"
+#import "unzip.h"
 
 #define READ_8(adr)  ((unsigned char)*(adr))
 #define READ_16(adr) ( READ_8(adr) | (READ_8(adr+1) << 8) )
