@@ -61,9 +61,9 @@
 /* Begin PBXFileReference section */
 		250ECC8E21B622E600F6FEE9 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		2517AB2821BD714500695532 /* PathTypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTypeCasting.swift; sourceTree = "<group>"; };
-		2517AB3121BD7C7900695532 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		2520021B219329420052BBA8 /* BasicOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
 		2520021D2193294A0052BBA8 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		2567DC5A21BE155A004C49E6 /* minizip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = minizip.framework; path = Carthage/Build/iOS/minizip.framework; sourceTree = "<group>"; };
 		256A46B721BCF2B400B84F4D /* ZipArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipArchive.swift; sourceTree = "<group>"; };
 		25A6BD6C21BD62B5005D445C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		25A6BD6F21BD6440005D445C /* iOS+Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS+Fileable.swift"; sourceTree = "<group>"; };
@@ -107,6 +107,14 @@
 				OBJ_10 /* FHS.swift */,
 			);
 			path = Linux;
+			sourceTree = "<group>";
+		};
+		2567DC5921BE155A004C49E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2567DC5A21BE155A004C49E6 /* minizip.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		25A6BD6E21BD6422005D445C /* iOS */ = {
@@ -157,6 +165,7 @@
 				OBJ_15 /* Tests */,
 				OBJ_19 /* Documentation */,
 				OBJ_20 /* Products */,
+				2567DC5921BE155A004C49E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,7 +189,6 @@
 				250ECC8E21B622E600F6FEE9 /* Permissions.swift */,
 				256A46B721BCF2B400B84F4D /* ZipArchive.swift */,
 				25A6BD6C21BD62B5005D445C /* Utilities.swift */,
-				2517AB3121BD7C7900695532 /* Bridging-Header.h */,
 			);
 			name = Fileable;
 			path = Sources/Fileable;
@@ -195,6 +203,7 @@
 			buildPhases = (
 				OBJ_27 /* Sources */,
 				OBJ_34 /* Frameworks */,
+				2567DC5C21BE1582004C49E6 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -272,6 +281,27 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2567DC5C21BE1582004C49E6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -337,6 +367,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Fileable.xcodeproj/Fileable_Info.plist;
@@ -352,7 +383,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Fileable/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Fileable;
@@ -369,6 +400,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Fileable.xcodeproj/Fileable_Info.plist;
@@ -384,7 +416,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Sources/Fileable/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGET_NAME = Fileable;
 			};

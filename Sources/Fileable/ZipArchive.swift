@@ -8,15 +8,18 @@
 
 import Foundation
 
+#if os(Linux)
+import MiniZip
+#endif
 
-
-
+/*
 public enum ZipCompressionLevel {
     case NoCompression
     case BestSpeed
     case Default
     case BestCompression
     
+
     
     var minizipLevel: Int32 {
         switch self {
@@ -92,3 +95,4 @@ extension Path {
         // TODO: Implement zipping
     }
 }
+*/
