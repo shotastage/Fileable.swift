@@ -1,22 +1,32 @@
 # Version 1.3
 
-- Implement Zip manager
+- [ ] Implement Zip manager
 
 
 ## Version 1.2 **Current**
 
-- Implement Chmod
+- [ ] Implement change mode
 
-- Implement Document Directory Manager
+- [ ] Implement Document Directory Manager
+
+- [x] Support both String and URL type as a path param 
+
+- [x] Separate platform specific method as a service
+
+- [x] Support making multiple directory at once
+
+- [x] Add path absolute or relative detector
+
+
 
 
 ## Version 1.0.9
 
-- Implement Chmod
+- [ ] Implement Chmod
 
-- iOS Directory
+- [x] iOS Directory
 
 
 ## Version 1.0.8
 
-- Implement List Dir
+- [x] Implement List Dir
