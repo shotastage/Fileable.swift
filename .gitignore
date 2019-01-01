@@ -68,3 +68,4 @@ fastlane/test_output
 Fileable.framework.zip
 
 MEMO.md
+.DS_Store
