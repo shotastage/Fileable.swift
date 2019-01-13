@@ -2,12 +2,15 @@
 
 - [ ] Implement Zip manager
 
+- [ ] Implement downloader
+
+- [ ] Implement cache system
+
+- [ ] Implement Document Directory Manager
 
 ## Version 1.2 **[Current]**
 
 - [ ] Implement change mode
-
-- [ ] Implement Document Directory Manager
 
 - [x] Support both String and URL type as a path param 
 
