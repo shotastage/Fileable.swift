@@ -8,9 +8,11 @@
 
 - [ ] Implement Document Directory Manager
 
+- [ ] Implement change mode
+
 ## Version 1.2 **[Current]**
 
-- [ ] Implement change mode
+- [x] Implement get bundle file path method 
 
 - [x] Support both String and URL type as a path param 
 
