@@ -1,3 +1,15 @@
+## Version 1.2
+
+- Implement get bundle file path method 
+
+- Support both String and URL type as a path param 
+
+- Separate platform specific method as a service
+
+- Support making multiple directory at once
+
+- Add path absolute or relative detector
+
 ## Version 1.1
 
 - Fix building scheme failure

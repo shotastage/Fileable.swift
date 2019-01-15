@@ -9,6 +9,7 @@
 import Foundation
 
 
+#if DEBUG
 open class Downloader {
     
     public static let shared = Downloader()
@@ -19,3 +20,4 @@ open class Downloader {
         
     }
 }
+#endif
