@@ -1,3 +1,7 @@
+## Version 1.2.1
+
+- Fix internal inaccessible level
+
 ## Version 1.2
 
 - Implement get bundle file path method 
