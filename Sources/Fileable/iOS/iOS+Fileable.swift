@@ -17,6 +17,13 @@ open class FileableIOS {
     public static let shared = FileableIOS()
     
     private init() { }
+    
+    static func getBundle(file: String) -> String {
+        
+        let path = Bundle.main.path(forResource: file.components(separatedBy: ".")[0] , ofType: file.components(separatedBy: ".")[1])!
+        
+        return path
+    }
 }
 
 

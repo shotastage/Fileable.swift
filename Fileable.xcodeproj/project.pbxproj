@@ -35,7 +35,7 @@
 		OBJ_30 /* StoredProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* StoredProperties.swift */; };
 		OBJ_31 /* Fileable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Fileable.swift */; };
 		OBJ_32 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Operations.swift */; };
-		OBJ_33 /* Old.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Old.swift */; };
+		OBJ_33 /* OLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* OLD.swift */; };
 		OBJ_40 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_51 /* FileableTestMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FileableTestMain.swift */; };
 		OBJ_52 /* XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* XCTest.swift */; };
@@ -76,7 +76,7 @@
 		OBJ_11 /* StoredProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredProperties.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Fileable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fileable.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
-		OBJ_14 /* Old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Old.swift; sourceTree = "<group>"; };
+		OBJ_14 /* OLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLD.swift; sourceTree = "<group>"; };
 		OBJ_17 /* FileableTestMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileableTestMain.swift; sourceTree = "<group>"; };
 		OBJ_18 /* XCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTest.swift; sourceTree = "<group>"; };
 		OBJ_19 /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = SOURCE_ROOT; };
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				25A6BD6F21BD6440005D445C /* iOS+Fileable.swift */,
-				OBJ_14 /* Old.swift */,
+				OBJ_14 /* OLD.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				OBJ_31 /* Fileable.swift in Sources */,
 				OBJ_32 /* Operations.swift in Sources */,
 				25A6BD7021BD6440005D445C /* iOS+Fileable.swift in Sources */,
-				OBJ_33 /* Old.swift in Sources */,
+				OBJ_33 /* OLD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
