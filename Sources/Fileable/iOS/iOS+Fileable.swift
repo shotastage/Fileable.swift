@@ -18,7 +18,7 @@ open class FileableIOS {
     
     private init() { }
     
-    func getBundle(file: String) -> String? {
+    public func getBundle(file: String) -> String? {
         
         let path = Bundle.main.path(forResource: file.components(separatedBy: ".")[0] , ofType: file.components(separatedBy: ".")[1])
         
