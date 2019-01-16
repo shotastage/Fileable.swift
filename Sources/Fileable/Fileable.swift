@@ -21,11 +21,11 @@ open class Path {
     
     // Services
     #if os(iOS) || os(watchOS) || os(tvOS)
-    static let ios = FileableIOS.shared
+    public static let ios = FileableIOS.shared
     #endif
     
     #if os(Linux)
-    static let linux = FileableLinux.shared
+    public static let linux = FileableLinux.shared
     #endif
     
     

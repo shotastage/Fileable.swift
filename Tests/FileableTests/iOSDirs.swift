@@ -43,6 +43,13 @@ class IOSDirsTest: XCTestCase {
         XCTAssertTrue(cacheDirectory.contains("Library/Caches"))
         XCTAssertTrue(tmpDirectory.contains("tmp"))
     }
+    
+    
+    func testGetBundleFile() {
+        let path = Path.ios.getBundle(file: "unlocated.txt")
+        
+        XCTAssertNil(path)
+    }
 
     
     func testPerformanceExample() {
