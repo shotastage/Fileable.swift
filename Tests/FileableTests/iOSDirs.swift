@@ -46,7 +46,9 @@ class IOSDirsTest: XCTestCase {
     
     
     func testGetBundleFile() {
-        let path = Path.ios.getBundle(file: "")
+        let path = Path.ios.getBundle(file: "unlocated.txt")
+        
+        XCTAssertNil(path)
     }
 
     
