@@ -3,7 +3,7 @@
 //  Fileable
 //
 //  Created by Shota Shimazu on 2018/12/04.
-//  Copyright © 2017-2019 Shota Shimazu. All rights reserved.
+//  Copyright © 2017-2020 Shota Shimazu. All rights reserved.
 //
 
 import Foundation
