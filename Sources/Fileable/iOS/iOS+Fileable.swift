@@ -38,6 +38,7 @@ public enum IOSDirs {
     
     
     /// path propaty returns directory path as String type
+    @available(iOS 10.0, *)
     var path: String! {
         switch self {
             
