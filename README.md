@@ -1,6 +1,6 @@
 ![Fileable](./Documentation/filekit_readme.png)
 
-[![Build Status](https://travis-ci.com/shotastage/Fileable.swift.svg?branch=master)](https://travis-ci.com/shotastage/Fileable.swift)
+[![Build Status](https://travis-ci.com/shotastage/Fileable.swift.svg?branch=main)](https://travis-ci.com/shotastage/Fileable.swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/shotasatge/Fileable)
 [![Version](https://img.shields.io/cocoapods/v/Fileable.svg?style=flat)](http://cocoapods.org/pods/Fileable)
 ![iOS 10+](https://img.shields.io/badge/iOS-10%2B-blue.svg?style=flat)
