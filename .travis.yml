@@ -1,5 +1,5 @@
 osx_image: xcode12.5
 language: objective-c
 xcode_project: Fileable.xcodeproj
-xcode_scheme: Fileable
+xcode_scheme: Fileable-Package
 xcode_destination: platform=iOS Simulator,OS=14.5,name=iPhone 11
