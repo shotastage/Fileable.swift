@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import System
 
 // Show file information
 
@@ -32,8 +32,7 @@ extension Path {
     /// Get home directory.
     /// - returns: Return home directory path as a string.
     public static var home: String {
-        let path = NSHomeDirectory()
-        return path
+        return NSHomeDirectory()
     }
     
     /// List contents of specific directory
@@ -44,11 +43,10 @@ extension Path {
         
         do {
             try path = Path.fm.contentsOfDirectory(atPath: self.path)
-            
         } catch {
             path = nil
         }
-        
+
         return path
     }
 }
@@ -57,13 +55,15 @@ extension Path {
 // Check and Change file or directory permission
 extension Path {
     
+    @available(macOS 11.0, *)
     public var permission: Int {
         get {
             fatalError("This stored property is not implemented now!")
         }
         
         set {
-            fatalError("This stored property is not implemented now!")
+            let perms = FilePermissions(rawValue: CModeT(newValue))
+            
         }
     }
 }
