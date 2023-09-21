@@ -12,9 +12,9 @@
 
 ## Version 1.2 **[Current]**
 
-- [x] Implement get bundle file path method 
+- [x] Implement get bundle file path method
 
-- [x] Support both String and URL type as a path param 
+- [x] Support both String and URL type as a path param
 
 - [x] Separate platform specific method as a service
 
